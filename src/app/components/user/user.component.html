@@ -1,0 +1,14 @@
+<h2 class="text-center">Users</h2>
+<table class="border border-danger">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>group</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{getGroup(user.groupId).name}}</td>
+  </tr>
+</table>
+

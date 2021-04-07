@@ -1,0 +1,12 @@
+<h2 class="text-center">Groups</h2>
+<table class="border border-warning">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+  </tr>
+  <tr *ngFor="let group of groups">
+    <td>{{group.id}}</td>
+    <td>{{group.name}}</td>
+  </tr>
+</table>
+
